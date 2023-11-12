@@ -1,12 +1,8 @@
 using DV.ThingTypes;
 using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static dumb282tweaks.Main;
 using UnityEngine;
+
+using static dumb282tweaks.Main;
 
 namespace dumb282tweaks;
 
