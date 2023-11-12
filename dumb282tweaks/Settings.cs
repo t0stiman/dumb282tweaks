@@ -25,28 +25,12 @@ public static class Settings {
 		[Description("Wagner Smoke Deflectors")]
 		Wagner,
 	}
-	public enum SmokeStackType {
-		[Description("Default Smoke Stack")]
-		Default,
-		[Description("Short Smoke Stack")]
-		Short,
-	}
 }
 
 public class dumb282tweaksSettings : UnityModManager.ModSettings {
-	public bool bluetooth = false;
-	public bool flattensyour282 = false;
-
-	public bool regularBody = true;
-	public BoilerType boilerType = BoilerType.Default;
-	public CabType cabType = CabType.Default;
+	// public CabType cabType = CabType.Default;
 	public SmokeDeflectorType smokeDeflectorType = SmokeDeflectorType.Wagner;
-	public SmokeStackType smokeStackType = SmokeStackType.Default;
-
-	public bool cowCatcher = true;
-	public bool frontCover = false;
-	public bool railings = true;
-	public bool walkway = true;
+	public BoilerType boilerType = BoilerType.Default;
 
 	public override void Save(UnityModManager.ModEntry modEntry) {
 		Save(this, modEntry);

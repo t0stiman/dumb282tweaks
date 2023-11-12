@@ -4,7 +4,7 @@ param (
 )
 
 Set-Location "$PSScriptRoot"
-$FilesToInclude = "info.json","build/*","LICENSE"
+$FilesToInclude = "info.json","build/*","LICENSE","assets"
 
 $modInfo = Get-Content -Raw -Path "info.json" | ConvertFrom-Json
 $modId = $modInfo.Id
@@ -20,6 +20,7 @@ $ZipOutDir = "$ZipWorkDir/$modId"
 
 New-Item "$ZipOutDir" -ItemType Directory -Force
 Copy-Item -Force -Path $FilesToInclude -Destination "$ZipOutDir"
+Copy-Item -Force -Path "assets/*" -Destination "$ZipOutDir/assets"
 
 if (!$NoArchive)
 {
