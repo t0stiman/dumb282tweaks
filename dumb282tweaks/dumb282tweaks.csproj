@@ -3,7 +3,6 @@
 		<AssemblyName>dumb282tweaks</AssemblyName>
 		<TargetFramework>net48</TargetFramework>
 		<LangVersion>latest</LangVersion>
-		<Nullable>enable</Nullable>
 		<WarningsAsErrors>CS8600;CS8602;CS8603</WarningsAsErrors>
 	</PropertyGroup>
 
@@ -15,7 +14,6 @@
 	<!-- Null Checking -->
 	<ItemGroup>
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-		<PackageReference Include="Nullable" Version="1.3.1" PrivateAssets="all" />
 	</ItemGroup>
 	<ItemGroup>
 		<!-- Derail Valley -->

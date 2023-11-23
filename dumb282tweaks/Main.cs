@@ -10,13 +10,13 @@ namespace dumb282tweaks;
 
 public static class Main {
 	// Variables
-	[AllowNull] public static UnityModManager.ModEntry Instance { get; private set; }
-	[AllowNull] public static dumb282tweaksSettings Settings { get; private set; }
+	public static UnityModManager.ModEntry Instance { get; private set; }
+	public static dumb282tweaksSettings Settings { get; private set; }
 
-	public static readonly string[] cabTypeTexts = new[] {
-		"Default",
-		"German"
-	};
+	// public static readonly string[] cabTypeTexts = new[] {
+	// 	"Default",
+	// 	"German"
+	// };
 	public static readonly string[] smokeDeflectorTypeTexts = new[] {
 		"None",
 		"Witte",
@@ -31,9 +31,9 @@ public static class Main {
 	// 	"Short",
 	// };
 
-	[AllowNull] public static GameObject wagnerSmokeDeflectorsLoad;
-	[AllowNull] public static GameObject witteSmokeDeflectorsLoad;
-	[AllowNull] public static GameObject streamlinedBoilerLoad;
+	public static GameObject wagnerSmokeDeflectorsLoad;
+	public static GameObject witteSmokeDeflectorsLoad;
+	public static GameObject streamlinedBoilerLoad;
 
 	// Load
 	private static bool Load(UnityModManager.ModEntry modEntry) {
